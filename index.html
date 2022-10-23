@@ -4,10 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
-<body class="text-white">
-  
+<body>
+  <div class="wrapper h-screen bg-red-200">
+    <div class="header | bg-orange-200 p-6">
+        <div class="upper-area flex justify-between">
+            <div class="search w-3/5">
+                <input placeholder="search here" type="search" class="w-full">
+            </div>
+            <div class="profile-options">
+                <span>Morgan Oakley</span>
+            </div>
+        </div>
+        <div class="lower-area bg-blue-100 flex justify-between">
+            <div class="greeting">
+                <p>Hi there</p>
+                <p>Morgan Oakley (@morgan)</p>
+            </div>
+            <div class="buttons flex gap-4">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar | bg-sky-500">
+        <div class="dashboard | nav-item ">
+            <img class="scale-up" src="icons/dashboard.svg"  alt="dash-icon">
+           <span>DASHBOARD</span> 
+        </div>
+        <div class="first-navigation flex flex-col gap-3">
+            <div class="home nav-item">
+                <img src="icons/home.svg" alt="home-icon">
+                <span>Home</span>
+            </div>
+            <div class="profile nav-item">
+                <img src="icons/profile.svg" alt="profile-icon">
+                <span>Profile</span></div>
+            <div class="messages nav-item">
+                <img src="icons/messages.svg" alt="message-icon">
+                <span>Messages</span></div>
+            <div class="history nav-item">
+                <img src="icons/history.svg" alt="history-icon">
+                <span>History</span></div>
+            <div class="tasks nav-item">
+                <img src="icons/tasks.svg" alt="task-icon">
+                <span>Tasks</span></div>
+            <div class="communities nav-item">
+                <img src="icons/communities.svg" alt="people-icon">
+                <span>Communities</span></div>
+        </div>
+        <div class="second-navigation flex flex-col gap-3">
+            <div class="settings nav-item">
+                <img src="icons/settings.svg" alt="setting-icon">
+                <span>Settings</span></div>
+            <div class="support nav-item">
+                <img src="icons/support.svg" alt="support-icon">
+                <span>Support</span></div>
+            <div class="privacy nav-item">
+                <img src="icons/privacy.svg" alt="privacy-icon">
+                <span>Privacy</span></div>
+        </div>
+    </div>
+    <div class="main-content | bg-green-600">
+        <div class="projects">
+            <p>Your Projects</p>
+            <div class="project-cards">
+                <div class="project-card">Card 1</div>
+                <div class="project-card">Card 2</div>
+                <div class="project-card">Card 3</div>
+                <div class="project-card">Card 4</div>
+                <div class="project-card">Card 5</div>
+                <div class="project-card">Card 6</div>
+            </div>
+
+        </div>
+        <div class="side-content">
+            <div class="announcements">
+                <p>Announcements</p>
+                <div class="announcement-card">
+                    <div>Announcement 1</div>
+                    <div>Announcement 2</div>
+                    <div>Announcement 3</div>
+                </div>
+            </div>
+            <div class="trending">
+                <p>Trending</p>
+                <div class="trending-card">
+                    <div>Trending 1</div>
+                    <div>Trending 2</div>
+                    <div>Trending 3</div>
+                    <div>Trending 4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
