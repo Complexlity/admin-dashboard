@@ -9,24 +9,31 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-  <div class="wrapper h-screen bg-red-200">
-    <div class="header | bg-orange-200 p-6">
+  <div class="wrapper h-screen">
+    <div class="header | p-6">
         <div class="upper-area">
-            <div class="search">
-                <input placeholder="search here" type="search">
+            <div class="search flex align-center gap-2 ">
+                <img src="icons/search.svg" alt="search-icon">
+                <input placeholder="search here" type="search" class="bg-slate-200 px-3 py-1">
             </div>
             <div class="profile-options">
                 <img class="icon" src="icons/bell.svg" alt="notification-icon">
                 <img class="profile-image"src="icons/profile-image2.jpg" alt="">
-                <span>Complexlity</span>
+                <span class="font-bold">Complexlity</span>
             </div>
         </div>
-        <div class="lower-area bg-blue-100 flex justify-between">
-            <div class="greeting">
-                <p>Hi there</p>
-                <p>Morgan Oakley (@morgan)</p>
+        <div class="lower-area grid">
+            <div class="greeting grid gap-3 align-center">
+                <img src="icons/profile-image2.jpg" alt="profile-image" class="profile-image">
+                <div class="name | grid">
+                    <p>Hi there,
+                        <br>
+                        <span class="font-bold">Complexlity</span>
+                    </p>
+                    
+                </div>
             </div>
-            <div class="buttons flex gap-4">
+            <div class="buttons flex gap-4 px-8 text-white">
                 <button>New</button>
                 <button>Upload</button>
                 <button>Share</button>

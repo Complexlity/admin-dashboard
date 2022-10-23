@@ -4,7 +4,9 @@
 
 :root{
     --spaces:.75rem;
+    --icons-height:1.5rem;
 }
+
 .wrapper {
     display:grid;
     grid-template-columns: minmax(250px, 1fr) 5fr;
@@ -18,18 +20,30 @@
 .header {
     grid-area:header;
     display:grid;
+    gap:2rem;
 }
 
+img{
+    width:var(--icons-height);
+}
 .upper-area {
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr auto;
     gap:2rem;
     align-items: center;
 }
 
-@media only screeen and (max-width:900px){
-    .search {
-        width:80%;
+.search input {
+    border-radius:1000vw;
+}
+
+.search input:focus{
+    border:1px solid #94a3b8;
+    outline:none;
+}
+@media only screen and (min-width:900px){
+    .search input{
+        width:clamp(10px, 100%, 750px)
     }
 }
 
@@ -41,16 +55,48 @@
     font-size: 1.2rem;
 }
 
-.profile-options .icon {
-    width:2rem;
-}
-
-.profile-options .profile-image {
+.profile-image {
     width:3rem;
-    aspect-ratio: 1;
+    height:3rem;
     border-radius: 50%;
 }
 
+.lower-area {
+    grid-template-columns: 1fr auto;
+    gap:10px;
+}
+
+.greeting {
+    grid-template-columns: auto 1fr;
+}
+
+.name {
+    align-content:center;
+    width:100%;
+    line-height: 1.2rem;
+}
+
+@media only screen and (min-width:800px) {
+    .name span {
+        font-size:1.5rem;
+    }
+}
+.buttons button {
+    border-radius:1000vw;
+    padding:5px 30px;
+    background-color: #0284c7;
+    align-self: center;
+}
+
+.buttons button:hover {
+    background-color: #0ea5e9;
+}
+
+@media only screen and (max-width:900px){
+    .buttons button{
+        padding:3px 15px
+    }
+}
 .sidebar {
     grid-area:sidebar;
     display:flex;
@@ -71,8 +117,6 @@
 
 .nav-item img{
     display: inline-block;
-    width:1.5rem;
-    
 }
 
 .scale-up {
@@ -112,6 +156,7 @@
     display:grid;
     place-items:center;
 }
+
 
 .announcements, .trending{
     display:flex;
