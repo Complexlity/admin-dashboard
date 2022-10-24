@@ -13,8 +13,17 @@ body{
     min-height:100vh;
 }
 
-img{
+img, .card-icons svg{
     width:var(--icons-height);
+}
+
+h3, h2{
+    font-weight: bold; 
+    font-size:1.1em;
+}
+
+h2{
+    font-size: 1.3em;
 }
 
 .wrapper {
@@ -172,11 +181,26 @@ img{
 }
 
 .project-card{
-    background-color:aqua;
+    background-color:hsl(20, 6%, 99%);
     display:grid;
-    place-items:center;
+    grid-template-rows: 1fr auto;
     border-radius:.4rem;
-    border-left:.3rem solid orange;
+    padding:1.5rem;
+
+}
+
+.card-content p {
+    line-height: 1.15rem;
+}
+
+.card-icons {
+    display:flex;
+    justify-content: flex-end;
+    gap:var(--spaces);
+}
+
+.card-icons svg:hover {
+    fill:#2563eb;   
 }
 
 /* --------------------- */
@@ -205,9 +229,9 @@ img{
     line-height: .9rem;
 }
 
-.announcement-card h3{
+
+.announcement h3{
     margin-bottom: 3px;
-    font-size:1.1em;
 }
 .announcement-card div:not(:last-of-type){
     border-bottom:2px solid olive;
