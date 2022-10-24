@@ -157,17 +157,20 @@ img{
     gap:var(--spaces);
 }
 
+.project-card{
+    background-color:aqua;
+    display:grid;
+    place-items:center;
+    border-radius:.4rem;
+    border-left:.3rem solid orange;
+}
 
 .side-content {
     display:grid;
     gap:var(--spaces)
 }
 
-.project-card{
-    background-color:aqua;
-    display:grid;
-    place-items:center;
-}
+
 
 
 .announcements, .trending{
