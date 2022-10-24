@@ -200,7 +200,7 @@ h2{
 }
 
 .card-icons svg:hover {
-    fill:#2563eb;   
+    fill:#1e40af;   
 }
 
 /* --------------------- */
@@ -259,9 +259,19 @@ h2{
     border-radius: 50%;
 }
 
+.trending-card img {
+    width:3rem;
+    border-radius: 50%;
+    height:100%;
+}
+
 
 span.first {
     font-weight:bold;
+}
+
+span.second {
+    margin-top:.1rem;
 }
 
 
