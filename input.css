@@ -69,6 +69,10 @@ h2{
     }
 }
 
+.bell-icon:hover {
+    -webkit-animation: headShake 1s;
+    animation: headShake 1s;
+}
 .profile-options{
     display:flex;
     justify-content: flex-end;
