@@ -9,11 +9,11 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-  <div class="wrapper h-screen">
-    <div class="header | p-6">
+  <div class="wrapper h-full">
+    <div class="header | p-6 pt-4">
         <div class="upper-area">
             <div class="search flex align-center gap-2 ">
-                <img src="icons/search.svg" alt="search-icon">
+                <img class="icon" src="icons/search.svg" alt="search-icon">
                 <input placeholder="search here" type="search" class="bg-slate-200 px-3 py-1">
             </div>
             <div class="profile-options">
@@ -24,7 +24,7 @@
         </div>
         <div class="lower-area grid">
             <div class="greeting grid gap-4 align-center">
-                <img src="icons/profile-image2.jpg" alt="profile-image" class="profile-image">
+                <img class="profile-image" src="icons/profile-image2.jpg" alt="profile-image" class="profile-image">
                 <div class="name | grid">
                     <p>Hi there,
                         <br>
@@ -42,39 +42,39 @@
     </div>
     <div class="sidebar | bg-sky-500">
         <div class="dashboard | nav-item ">
-            <img class="scale-up" src="icons/dashboard.svg"  alt="dash-icon">
+            <img class="scale-up icon" src="icons/dashboard.svg"  alt="dash-icon">
            <span>DASHBOARD</span> 
         </div>
         <div class="first-navigation flex flex-col gap-3">
             <div class="home nav-item">
-                <img src="icons/home.svg" alt="home-icon">
+                <img class="icon" src="icons/home.svg" alt="home-icon">
                 <span>Home</span>
             </div>
             <div class="profile nav-item">
-                <img src="icons/profile.svg" alt="profile-icon">
+                <img class="icon" src="icons/profile.svg" alt="profile-icon">
                 <span>Profile</span></div>
             <div class="messages nav-item">
-                <img src="icons/messages.svg" alt="message-icon">
+                <img class="icon" src="icons/messages.svg" alt="message-icon">
                 <span>Messages</span></div>
             <div class="history nav-item">
-                <img src="icons/history.svg" alt="history-icon">
+                <img class="icon" src="icons/history.svg" alt="history-icon">
                 <span>History</span></div>
             <div class="tasks nav-item">
-                <img src="icons/tasks.svg" alt="task-icon">
+                <img class="icon" src="icons/tasks.svg" alt="task-icon">
                 <span>Tasks</span></div>
             <div class="communities nav-item">
-                <img src="icons/communities.svg" alt="people-icon">
+                <img class="icon" src="icons/communities.svg" alt="people-icon">
                 <span>Communities</span></div>
         </div>
         <div class="second-navigation flex flex-col gap-3">
             <div class="settings nav-item">
-                <img src="icons/settings.svg" alt="setting-icon">
+                <img class="icon" src="icons/settings.svg" alt="setting-icon">
                 <span>Settings</span></div>
             <div class="support nav-item">
-                <img src="icons/support.svg" alt="support-icon">
+                <img class="icon" src="icons/support.svg" alt="support-icon">
                 <span>Support</span></div>
             <div class="privacy nav-item">
-                <img src="icons/privacy.svg" alt="privacy-icon">
+                <img class="icon" src="icons/privacy.svg" alt="privacy-icon">
                 <span>Privacy</span></div>
         </div>
     </div>
@@ -82,7 +82,13 @@
         <div class="projects">
             <p>Your Projects</p>
             <div class="project-cards">
-                <div class="project-card">Card 1</div>
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repellat.</p>
+                    </div>
+                    <div class="card-icons"></div>
+                </div>
                 <div class="project-card">Card 2</div>
                 <div class="project-card">Card 3</div>
                 <div class="project-card">Card 4</div>
