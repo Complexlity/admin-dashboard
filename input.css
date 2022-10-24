@@ -141,17 +141,24 @@ h2{
 .nav-item{
     width:100%;
     display:flex;
-    gap:10px;
     align-items:center;
     padding-left:20px;  
 }
 
+.nav-item:not(.dashboard):hover{
+    background-color:#1d4ed8;
+}
 .nav-item img{
     display: inline-block;
 }
 
 .scale-up {
     scale: 1.7;
+}
+
+.first-navigation .nav-item, .second-navigation .nav-item {
+    column-gap: .75rem;
+    padding-block:10px;
 }
 
 /* ------------------- */
